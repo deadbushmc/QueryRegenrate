@@ -22,3 +22,4 @@ class Main extends PluginBase implements Listener{
         $event->setMaxPlayerCount($event->getPlayerCount() + 1);
         $event->setPlayerCount($event->getPlayerCount() + 0);
     }
+}
