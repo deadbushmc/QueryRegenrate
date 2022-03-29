@@ -2,6 +2,6 @@
 name: QueryRegenerate
 version: 1.0.0
 main: NightDevil\QueryRegenerate\Main
-api: [3.0.0]
+api: [4.0.0]
 author: NightDevil
 ...
