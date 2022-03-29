@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace NightDevil\QueryRegenerate;
 
 use pocketmine\Server;
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
