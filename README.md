@@ -1,14 +1,15 @@
 # QueryRegenrate
 Have ever seen servers having 1/2 players and when someone joins it goes to 2/3 players?
 
-Then this plugin is for you just upload the plugin in your server and restart
-
-
 # Credits
 https://github.com/NightDevil9440
 
-https://discord.gg/XzBhryDbB7
+### Installation
+- Go to "server.properties"
+- Set "max-players" to 1
+- Download and upload this plugin to your plugins folder
+- Restart your server
+- Done!
 
-
-# Note
-I didn't make this plugin. It was made by NightDevil and he told me to upload the plugin publically in my github
+Now everytime someone joins the server, the player count is gonna go up by 1.
+He made this code and told me to publish this to GitHub, so I did.
