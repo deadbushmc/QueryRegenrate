@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace NightDevil\QueryRegenerate;
 
 use pocketmine\Server;
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
@@ -17,9 +17,9 @@ class Main extends PluginBase implements Listener{
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
     
-    public function onQuery(QueryRegenerateEvent $event): void
-    {
-        $event->setMaxPlayerCount($event->getPlayerCount() + 1);
-        $event->setPlayerCount($event->getPlayerCount() + 0);
-    }
+  public function onQueryRegenerate(QueryRegenerateEvent $ev) : void{
+    $queryInfo = $ev->getQueryInfo();
+    $curPlayerCount = count(Server::getInstance()->getOnlinePlayers())
+    $queryInfo->setMaxPlayerCount($curPlayerCount + 1);
+   }
 }
