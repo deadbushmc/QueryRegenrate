@@ -13,9 +13,9 @@ use pocketmine\event\server\QueryRegenerateEvent;
 
 class Main extends PluginBase implements Listener{
     
-    public function onEnable(){
-        $this->getServer()->getPluginManager()->registerEvents($this, $this);
-    }
+  public function onEnable() : void {
+    $this->getServer()->getPluginManager()->registerEvents($this, $this);
+   }
     
   public function onQueryRegenerate(QueryRegenerateEvent $event) : void{
     $query = $event->getQueryInfo();
